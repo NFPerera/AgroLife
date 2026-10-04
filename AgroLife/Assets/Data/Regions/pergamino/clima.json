@@ -1,0 +1,528 @@
+{
+  "meses": [
+    {
+      "pSecoAHumedo": 0.237,
+      "pHumedoAHumedo": 0.506,
+      "gammaForma": 1.11,
+      "gammaEscala": 10.88,
+      "tmaxSeco": {
+        "media": 32.3,
+        "desvio": 3.9
+      },
+      "tmaxHumedo": {
+        "media": 30.9,
+        "desvio": 4.3
+      },
+      "tminSeco": {
+        "media": 17.0,
+        "desvio": 3.0
+      },
+      "tminHumedo": {
+        "media": 19.0,
+        "desvio": 2.8
+      },
+      "radSeco": {
+        "media": 28.4,
+        "desvio": 4.8
+      },
+      "radHumedo": {
+        "media": 20.3,
+        "desvio": 7.5
+      }
+    },
+    {
+      "pSecoAHumedo": 0.234,
+      "pHumedoAHumedo": 0.551,
+      "gammaForma": 1.01,
+      "gammaEscala": 11.9,
+      "tmaxSeco": {
+        "media": 30.4,
+        "desvio": 4.3
+      },
+      "tmaxHumedo": {
+        "media": 29.2,
+        "desvio": 3.8
+      },
+      "tminSeco": {
+        "media": 15.9,
+        "desvio": 3.5
+      },
+      "tminHumedo": {
+        "media": 18.2,
+        "desvio": 2.9
+      },
+      "radSeco": {
+        "media": 25.5,
+        "desvio": 4.2
+      },
+      "radHumedo": {
+        "media": 17.2,
+        "desvio": 6.7
+      }
+    },
+    {
+      "pSecoAHumedo": 0.233,
+      "pHumedoAHumedo": 0.525,
+      "gammaForma": 1.03,
+      "gammaEscala": 12.05,
+      "tmaxSeco": {
+        "media": 28.0,
+        "desvio": 4.3
+      },
+      "tmaxHumedo": {
+        "media": 26.9,
+        "desvio": 4.1
+      },
+      "tminSeco": {
+        "media": 14.1,
+        "desvio": 3.7
+      },
+      "tminHumedo": {
+        "media": 16.5,
+        "desvio": 3.2
+      },
+      "radSeco": {
+        "media": 21.1,
+        "desvio": 3.9
+      },
+      "radHumedo": {
+        "media": 14.2,
+        "desvio": 6.2
+      }
+    },
+    {
+      "pSecoAHumedo": 0.194,
+      "pHumedoAHumedo": 0.562,
+      "gammaForma": 0.94,
+      "gammaEscala": 13.89,
+      "tmaxSeco": {
+        "media": 23.2,
+        "desvio": 3.7
+      },
+      "tmaxHumedo": {
+        "media": 22.9,
+        "desvio": 3.6
+      },
+      "tminSeco": {
+        "media": 10.0,
+        "desvio": 3.5
+      },
+      "tminHumedo": {
+        "media": 13.4,
+        "desvio": 3.2
+      },
+      "radSeco": {
+        "media": 15.8,
+        "desvio": 3.6
+      },
+      "radHumedo": {
+        "media": 9.3,
+        "desvio": 4.7
+      }
+    },
+    {
+      "pSecoAHumedo": 0.106,
+      "pHumedoAHumedo": 0.547,
+      "gammaForma": 0.95,
+      "gammaEscala": 12.41,
+      "tmaxSeco": {
+        "media": 19.1,
+        "desvio": 3.9
+      },
+      "tmaxHumedo": {
+        "media": 19.2,
+        "desvio": 3.9
+      },
+      "tminSeco": {
+        "media": 7.3,
+        "desvio": 3.7
+      },
+      "tminHumedo": {
+        "media": 11.4,
+        "desvio": 3.5
+      },
+      "radSeco": {
+        "media": 11.3,
+        "desvio": 2.9
+      },
+      "radHumedo": {
+        "media": 6.3,
+        "desvio": 3.2
+      }
+    },
+    {
+      "pSecoAHumedo": 0.08,
+      "pHumedoAHumedo": 0.415,
+      "gammaForma": 1.01,
+      "gammaEscala": 8.02,
+      "tmaxSeco": {
+        "media": 16.1,
+        "desvio": 3.4
+      },
+      "tmaxHumedo": {
+        "media": 16.1,
+        "desvio": 3.7
+      },
+      "tminSeco": {
+        "media": 4.6,
+        "desvio": 3.8
+      },
+      "tminHumedo": {
+        "media": 8.0,
+        "desvio": 3.6
+      },
+      "radSeco": {
+        "media": 9.0,
+        "desvio": 2.8
+      },
+      "radHumedo": {
+        "media": 5.1,
+        "desvio": 2.8
+      }
+    },
+    {
+      "pSecoAHumedo": 0.089,
+      "pHumedoAHumedo": 0.396,
+      "gammaForma": 1.25,
+      "gammaEscala": 5.67,
+      "tmaxSeco": {
+        "media": 15.6,
+        "desvio": 3.9
+      },
+      "tmaxHumedo": {
+        "media": 15.2,
+        "desvio": 4.3
+      },
+      "tminSeco": {
+        "media": 3.5,
+        "desvio": 3.9
+      },
+      "tminHumedo": {
+        "media": 7.0,
+        "desvio": 3.4
+      },
+      "radSeco": {
+        "media": 10.0,
+        "desvio": 3.0
+      },
+      "radHumedo": {
+        "media": 5.3,
+        "desvio": 2.9
+      }
+    },
+    {
+      "pSecoAHumedo": 0.093,
+      "pHumedoAHumedo": 0.397,
+      "gammaForma": 1.0,
+      "gammaEscala": 10.65,
+      "tmaxSeco": {
+        "media": 18.4,
+        "desvio": 4.4
+      },
+      "tmaxHumedo": {
+        "media": 17.4,
+        "desvio": 4.7
+      },
+      "tminSeco": {
+        "media": 4.8,
+        "desvio": 3.9
+      },
+      "tminHumedo": {
+        "media": 8.1,
+        "desvio": 3.4
+      },
+      "radSeco": {
+        "media": 13.5,
+        "desvio": 3.6
+      },
+      "radHumedo": {
+        "media": 7.5,
+        "desvio": 4.3
+      }
+    },
+    {
+      "pSecoAHumedo": 0.14,
+      "pHumedoAHumedo": 0.424,
+      "gammaForma": 0.94,
+      "gammaEscala": 10.35,
+      "tmaxSeco": {
+        "media": 21.3,
+        "desvio": 4.0
+      },
+      "tmaxHumedo": {
+        "media": 19.8,
+        "desvio": 4.4
+      },
+      "tminSeco": {
+        "media": 6.9,
+        "desvio": 3.3
+      },
+      "tminHumedo": {
+        "media": 9.5,
+        "desvio": 3.2
+      },
+      "radSeco": {
+        "media": 18.3,
+        "desvio": 4.5
+      },
+      "radHumedo": {
+        "media": 10.4,
+        "desvio": 5.6
+      }
+    },
+    {
+      "pSecoAHumedo": 0.249,
+      "pHumedoAHumedo": 0.521,
+      "gammaForma": 1.08,
+      "gammaEscala": 10.27,
+      "tmaxSeco": {
+        "media": 24.6,
+        "desvio": 4.0
+      },
+      "tmaxHumedo": {
+        "media": 23.8,
+        "desvio": 4.1
+      },
+      "tminSeco": {
+        "media": 9.4,
+        "desvio": 3.1
+      },
+      "tminHumedo": {
+        "media": 12.3,
+        "desvio": 2.9
+      },
+      "radSeco": {
+        "media": 23.4,
+        "desvio": 5.1
+      },
+      "radHumedo": {
+        "media": 14.6,
+        "desvio": 7.0
+      }
+    },
+    {
+      "pSecoAHumedo": 0.237,
+      "pHumedoAHumedo": 0.497,
+      "gammaForma": 1.02,
+      "gammaEscala": 11.2,
+      "tmaxSeco": {
+        "media": 28.3,
+        "desvio": 4.1
+      },
+      "tmaxHumedo": {
+        "media": 26.9,
+        "desvio": 4.4
+      },
+      "tminSeco": {
+        "media": 12.7,
+        "desvio": 3.2
+      },
+      "tminHumedo": {
+        "media": 14.6,
+        "desvio": 3.1
+      },
+      "radSeco": {
+        "media": 27.5,
+        "desvio": 5.2
+      },
+      "radHumedo": {
+        "media": 17.8,
+        "desvio": 7.9
+      }
+    },
+    {
+      "pSecoAHumedo": 0.269,
+      "pHumedoAHumedo": 0.476,
+      "gammaForma": 1.04,
+      "gammaEscala": 10.61,
+      "tmaxSeco": {
+        "media": 30.9,
+        "desvio": 4.2
+      },
+      "tmaxHumedo": {
+        "media": 29.7,
+        "desvio": 4.0
+      },
+      "tminSeco": {
+        "media": 15.3,
+        "desvio": 3.4
+      },
+      "tminHumedo": {
+        "media": 17.2,
+        "desvio": 2.8
+      },
+      "radSeco": {
+        "media": 28.7,
+        "desvio": 5.6
+      },
+      "radHumedo": {
+        "media": 21.1,
+        "desvio": 8.0
+      }
+    }
+  ],
+  "autocorrelacion": {
+    "tmax": 0.66,
+    "tmin": 0.68,
+    "rad": 0.23
+  },
+  "enso": {
+    "frecuencias": {
+      "Nino": 0.294,
+      "Neutro": 0.412,
+      "Nina": 0.294
+    },
+    "multiplicadores": {
+      "Nino": [
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        },
+        {
+          "frecuencia": 1.111,
+          "cantidad": 1.046
+        }
+      ],
+      "Neutro": [
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        },
+        {
+          "frecuencia": 0.982,
+          "cantidad": 1.014
+        }
+      ],
+      "Nina": [
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 1,
+          "cantidad": 1
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        },
+        {
+          "frecuencia": 0.914,
+          "cantidad": 0.923
+        }
+      ]
+    }
+  }
+}

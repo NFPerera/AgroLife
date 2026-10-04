@@ -1,0 +1,12 @@
+[project]
+name = "agrolife-data-pipeline"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["requests", "numpy", "scipy", "pandas", "geopandas", "pyogrio", "shapely", "pyproj", "rasterio", "networkx", "pypdf"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

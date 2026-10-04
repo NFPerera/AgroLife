@@ -1,0 +1,198 @@
+{
+  "id": "pergamino",
+  "nombre": "Pergamino",
+  "latitud": -33.8359,
+  "longitud": -60.545,
+  "precioBaseTierraUsdHa": 14000,
+  "arrendamientoBaseQqHa": 17,
+  "fosforoBray": {
+    "media": 12,
+    "desvio": 5,
+    "minimo": 4
+  },
+  "origenUtm": {
+    "epsg": 32720,
+    "x": 727174,
+    "y": 6253332
+  },
+  "localidades": [
+    {
+      "nombre": "Acevedo",
+      "tipo": "village",
+      "x": 9602,
+      "y": 8847
+    },
+    {
+      "nombre": "El Socorro",
+      "tipo": "village",
+      "x": -14729,
+      "y": 19472
+    },
+    {
+      "nombre": "Fontezuela",
+      "tipo": "village",
+      "x": 7748,
+      "y": -8602
+    },
+    {
+      "nombre": "Guerrico",
+      "tipo": "village",
+      "x": 13739,
+      "y": 17745
+    },
+    {
+      "nombre": "Juan A. de la Peña",
+      "tipo": "village",
+      "x": 5298,
+      "y": 384
+    },
+    {
+      "nombre": "La Violeta",
+      "tipo": "village",
+      "x": 35157,
+      "y": 10510
+    },
+    {
+      "nombre": "Manuel Ocampo",
+      "tipo": "village",
+      "x": -9672,
+      "y": 8140
+    },
+    {
+      "nombre": "Mariano Benítez",
+      "tipo": "village",
+      "x": -3226,
+      "y": 14288
+    },
+    {
+      "nombre": "Mariano H. Alfonzo",
+      "tipo": "village",
+      "x": -27045,
+      "y": -8046
+    },
+    {
+      "nombre": "Pergamino",
+      "tipo": "city",
+      "x": -2941,
+      "y": -6770
+    },
+    {
+      "nombre": "Pinzón",
+      "tipo": "village",
+      "x": -17555,
+      "y": -17076
+    },
+    {
+      "nombre": "Rancagua",
+      "tipo": "village",
+      "x": 3219,
+      "y": -21619
+    },
+    {
+      "nombre": "Urquiza",
+      "tipo": "village",
+      "x": 14758,
+      "y": -10174
+    },
+    {
+      "nombre": "Villa San José de Rancagua",
+      "tipo": "village",
+      "x": 11490,
+      "y": -28611
+    }
+  ],
+  "acopios": [
+    {
+      "nombre": "Acopio Acevedo",
+      "x": 9602,
+      "y": 8847
+    },
+    {
+      "nombre": "Acopio El Socorro",
+      "x": -14729,
+      "y": 19472
+    },
+    {
+      "nombre": "Acopio Fontezuela",
+      "x": 7748,
+      "y": -8602
+    },
+    {
+      "nombre": "Acopio Guerrico",
+      "x": 13739,
+      "y": 17745
+    },
+    {
+      "nombre": "Acopio Juan A. de la Peña",
+      "x": 5298,
+      "y": 384
+    },
+    {
+      "nombre": "Acopio La Violeta",
+      "x": 35157,
+      "y": 10510
+    },
+    {
+      "nombre": "Acopio Manuel Ocampo",
+      "x": -9672,
+      "y": 8140
+    },
+    {
+      "nombre": "Acopio Mariano Benítez",
+      "x": -3226,
+      "y": 14288
+    },
+    {
+      "nombre": "Acopio Mariano H. Alfonzo",
+      "x": -27045,
+      "y": -8046
+    },
+    {
+      "nombre": "Acopio Pergamino",
+      "x": -2941,
+      "y": -6770
+    },
+    {
+      "nombre": "Acopio Pinzón",
+      "x": -17555,
+      "y": -17076
+    },
+    {
+      "nombre": "Acopio Rancagua",
+      "x": 3219,
+      "y": -21619
+    },
+    {
+      "nombre": "Acopio Urquiza",
+      "x": 14758,
+      "y": -10174
+    },
+    {
+      "nombre": "Acopio Villa San José de Rancagua",
+      "x": 11490,
+      "y": -28611
+    }
+  ],
+  "fuentes": [
+    {
+      "nombre": "NASA POWER, clima diario 1991–2025",
+      "licencia": "Pública"
+    },
+    {
+      "nombre": "NOAA CPC, índice ONI",
+      "licencia": "Pública"
+    },
+    {
+      "nombre": "SoilGrids 250 m v2.0 (ISRIC)",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "nombre": "INTA, Cartas de Suelos de la Provincia de Buenos Aires 1:50.000",
+      "licencia": "CC BY 4.0"
+    },
+    {
+      "nombre": "© colaboradores de OpenStreetMap (extracto de Geofabrik)",
+      "licencia": "ODbL"
+    }
+  ]
+}
