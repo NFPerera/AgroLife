@@ -1,0 +1,2 @@
+{ "modelo": { "horasInfiltracion": 6, "horasDrenaje": 4, "ksatAnegamientoMmH": 12, "fraccionAgotamiento": 0.5, "kcSueloDesnudo": 0.25,
+              "aguaInicialFraccion": 0.6, "nInicialKgHa": 40, "kMineralizacion": 0.18, "ppmPorKgP": 0.3, "pBrayMinimo": 3 } }

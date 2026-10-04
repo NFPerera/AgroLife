@@ -1,0 +1,2 @@
+{ "id": "prueba", "nombre": "Región de prueba", "latitud": -33.89, "longitud": -60.57,
+  "precioBaseTierraUsdHa": 14000, "arrendamientoBaseQqHa": 17, "fosforoBray": { "media": 14, "desvio": 5, "minimo": 4 } }

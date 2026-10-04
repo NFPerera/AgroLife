@@ -1,0 +1,7 @@
+{
+    "name": "AgroLife.Sim",
+    "rootNamespace": "AgroLife.Sim",
+    "references": [],
+    "autoReferenced": true,
+    "noEngineReferences": true
+}

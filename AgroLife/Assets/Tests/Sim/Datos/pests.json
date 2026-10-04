@@ -1,0 +1,11 @@
+{ "plagas": [
+  { "id": "chinches", "nombre": "Chinches", "cultivos": ["soja1", "soja2"], "etapas": ["Llenado"], "probDiaria": 0.012, "tempMinima": 15,
+    "multiplicadorLluvia": 1.0, "severidad": { "min": 0.04, "max": 0.30 }, "umbral": 0.10, "eficacia": 0.85,
+    "productoUsdHa": 12, "pulverizacionUsdHa": 9, "unidad": "chinches/m", "escalaNivel": 10 },
+  { "id": "isoca_cogollera", "nombre": "Isoca cogollera", "cultivos": ["maiz"], "etapas": ["Vegetativo"], "probDiaria": 0.010, "tempMinima": 18,
+    "multiplicadorLluvia": 1.0, "severidad": { "min": 0.03, "max": 0.20 }, "umbral": 0.08, "eficacia": 0.80,
+    "productoUsdHa": 18, "pulverizacionUsdHa": 9, "unidad": "% de plantas dañadas", "escalaNivel": 250 },
+  { "id": "roya", "nombre": "Roya", "cultivos": ["trigo"], "etapas": ["Vegetativo", "Floracion", "Llenado"], "probDiaria": 0.004, "tempMinima": 10,
+    "multiplicadorLluvia": 3.0, "severidad": { "min": 0.03, "max": 0.25 }, "umbral": 0.05, "eficacia": 0.85,
+    "productoUsdHa": 22, "pulverizacionUsdHa": 9, "unidad": "% de severidad foliar", "escalaNivel": 200 }
+] }

@@ -1,0 +1,8 @@
+{ "lotes": [
+  { "id": 1, "superficieHa": 100, "arena": 20, "limo": 65, "arcilla": 15, "corgPct": 1.8, "ccMm": 560, "pmpMm": 260, "ip": 90,  "unidadSuelo": "P1", "distanciaAcopioKm": 15 },
+  { "id": 2, "superficieHa": 80,  "arena": 40, "limo": 40, "arcilla": 20, "corgPct": 1.5, "ccMm": 500, "pmpMm": 250, "ip": 80,  "unidadSuelo": "P2", "distanciaAcopioKm": 25 },
+  { "id": 3, "superficieHa": 60,  "arena": 65, "limo": 25, "arcilla": 10, "corgPct": 1.0, "ccMm": 380, "pmpMm": 170, "ip": 60,  "unidadSuelo": "P3", "distanciaAcopioKm": 30 },
+  { "id": 4, "superficieHa": 120, "arena": 10, "limo": 58, "arcilla": 32, "corgPct": 2.0, "ccMm": 600, "pmpMm": 330, "ip": 70,  "unidadSuelo": "P4", "distanciaAcopioKm": 10 },
+  { "id": 5, "superficieHa": 40,  "arena": 82, "limo": 12, "arcilla": 6,  "corgPct": 0.6, "ccMm": 240, "pmpMm": 90,  "ip": 40,  "unidadSuelo": "P5", "distanciaAcopioKm": 40 },
+  { "id": 6, "superficieHa": 100, "arena": 18, "limo": 64, "arcilla": 18, "corgPct": 1.7, "ccMm": 570, "pmpMm": 270, "ip": 100, "unidadSuelo": "P6", "distanciaAcopioKm": 20 }
+] }

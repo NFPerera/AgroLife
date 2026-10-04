@@ -1,0 +1,15 @@
+{ "granos": {
+    "Trigo": { "referenciaUsdT": 200, "estacional": [0.95,0.97,0.99,1.0,1.01,1.02,1.03,1.04,1.04,1.02,0.98,0.95], "volatilidadDiaria": 0.012, "vidaMediaDias": 60 },
+    "Maiz":  { "referenciaUsdT": 170, "estacional": [1.03,1.02,0.98,0.96,0.95,0.96,0.98,1.0,1.02,1.03,1.04,1.03], "volatilidadDiaria": 0.012, "vidaMediaDias": 60 },
+    "Soja":  { "referenciaUsdT": 300, "estacional": [1.02,1.03,1.0,0.96,0.95,0.97,0.99,1.0,1.01,1.02,1.02,1.03], "volatilidadDiaria": 0.011, "vidaMediaDias": 60 } },
+  "costos": {
+    "trigo": { "semillaUsdHa": 72,  "agroquimicosUsdHa": 40, "siembraUsdHa": 65, "pulverizacionesUsdHa": 27 },
+    "maiz":  { "semillaUsdHa": 190, "agroquimicosUsdHa": 80, "siembraUsdHa": 65, "pulverizacionesUsdHa": 27 },
+    "soja1": { "semillaUsdHa": 50,  "agroquimicosUsdHa": 85, "siembraUsdHa": 65, "pulverizacionesUsdHa": 36 },
+    "soja2": { "semillaUsdHa": 55,  "agroquimicosUsdHa": 70, "siembraUsdHa": 65, "pulverizacionesUsdHa": 27 } },
+  "fertilizantes": { "nitrogenoUsdKg": 1.2, "fosforoUsdKg": 3.3, "aplicacionUsdHa": 10 },
+  "cosechaPorcentaje": 0.08, "comisionVenta": 0.02,
+  "flete": { "fijoUsdT": 5, "usdTKm": 0.25 },
+  "silobolsa": { "embolsadoUsdT": 4, "riesgoMensual": 0.03, "perdidaMin": 0.05, "perdidaMax": 0.25 },
+  "cuenta": { "limiteDescubiertoUsd": 50000, "tasaAnualDescubierto": 0.15, "alertaFraccion": 0.8 },
+  "capitalInicial": { "hectareas": 250, "cultivo": "soja1" } }
