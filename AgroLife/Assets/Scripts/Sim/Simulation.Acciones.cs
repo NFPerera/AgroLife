@@ -10,6 +10,16 @@ namespace AgroLife.Sim
 
         public double PrecioCompraUsd(int loteId) => Economia.PrecioCompraUsd(Datos.Lote(loteId), Datos.Region);
 
+        /// <summary>
+        /// Vencimiento de un arrendamiento firmado hoy: el 30/4 que cierra la campaña. Firmado el 30/4
+        /// ("vence el 30 de abril siguiente"), cuenta para la campaña que empieza mañana.
+        /// </summary>
+        public Fecha VencimientoArrendamiento()
+        {
+            var hoy = Estado.Fecha;
+            return Fecha.EnCampania(hoy.DiaDeCampania == 364 ? hoy.Campania + 1 : hoy.Campania, 30, 4);
+        }
+
         public Resultado ArrendarLote(int loteId)
         {
             var r = ValidarComun(loteId);
@@ -20,13 +30,8 @@ namespace AgroLife.Sim
             double costo = PrecioArrendamientoUsd(loteId);
             if (costo > FondosLibresUsd()) return SaldoInsuficiente(costo);
 
-            // Firmado el 30/4 ("vence el 30 de abril siguiente"), cuenta para la campaña que empieza mañana.
-            var hoy = Estado.Fecha;
-            int campania = hoy.DiaDeCampania == 364 ? hoy.Campania + 1 : hoy.Campania;
-            var contrato = new Contrato
-            {
-                LoteId = loteId, Campania = campania, MontoUsd = costo, Vence = Fecha.EnCampania(campania, 30, 4),
-            };
+            var vence = VencimientoArrendamiento();
+            var contrato = new Contrato { LoteId = loteId, Campania = vence.Campania, MontoUsd = costo, Vence = vence };
             lote.Plan = null; // se descarta el plan de los terceros
             lote.Tenencia = Tenencia.Arrendado;
             lote.Contrato = contrato;

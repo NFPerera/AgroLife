@@ -1,0 +1,80 @@
+/* Tema oscuro de AgroLife: paneles verdosos translúcidos, texto crema y acento dorado. */
+
+.pantalla { position: absolute; left: 0; top: 0; right: 0; bottom: 0; color: #EDE6D3; font-size: 16px; }
+.capa-absoluta { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.oculto { display: none; }
+
+.panel {
+    background-color: rgba(20, 28, 22, 0.92);
+    border-color: #3C4F40; border-width: 1px; border-radius: 6px;
+    padding: 12px;
+}
+.panel-lateral { position: absolute; right: 12px; top: 64px; bottom: 12px; width: 380px; }
+.panel-modal { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 760px; max-height: 92%; background-color: rgba(20, 28, 22, 0.97); }
+.unity-base-popup-field__input, .unity-popup-field__input { background-color: #2D3B30; border-color: #4E6452; color: #EDE6D3; }
+.unity-base-popup-field__text, .unity-popup-field__text { color: #EDE6D3; }
+.unity-base-field__label { color: #B9C7B5; }
+.unity-base-text-field__input { background-color: #2D3B30; color: #EDE6D3; border-color: #4E6452; }
+.panel-dialogo { position: absolute; left: 50%; top: 40%; translate: -50% -50%; width: 520px; }
+
+.barra {
+    position: absolute; left: 0; right: 0; top: 0; height: 52px;
+    flex-direction: row; align-items: center; padding: 0 12px;
+    background-color: rgba(20, 28, 22, 0.95); border-bottom-width: 1px; border-color: #3C4F40;
+}
+.barra > * { margin-right: 14px; }
+.barra-fecha { font-size: 20px; -unity-font-style: bold; min-width: 140px; }
+.barra-saldo { font-size: 18px; color: #E3C04B; min-width: 150px; }
+.barra-pronostico { color: #B9C7B5; }
+.barra-capa { width: 250px; flex-direction: row; align-items: center; }
+.barra-capa > .unity-base-field__label { min-width: 0; width: auto; margin-right: 8px; color: #B9C7B5; }
+.barra-capa > .unity-base-field__input { flex-grow: 1; background-color: #2D3B30; border-color: #4E6452; color: #EDE6D3; }
+.unity-base-dropdown__container-inner { background-color: #2D3B30; }
+.unity-base-dropdown__label { color: #EDE6D3; }
+.grupo { flex-direction: row; }
+.separador { flex-grow: 1; }
+
+.boton {
+    background-color: #2D3B30; color: #EDE6D3; border-color: #4E6452; border-width: 1px; border-radius: 4px;
+    padding: 4px 10px; margin: 2px;
+}
+.boton:hover { background-color: #3A4C3E; }
+.boton:disabled { opacity: 0.4; }
+.boton-vel { min-width: 40px; }
+.activo { background-color: #E3C04B; color: #1E2A22; }
+.boton-principal { background-color: #3E8E41; border-color: #5FAE62; }
+
+.titulo { font-size: 22px; -unity-font-style: bold; margin-bottom: 8px; }
+.subtitulo { font-size: 17px; -unity-font-style: bold; margin-top: 10px; margin-bottom: 4px; color: #E3C04B; }
+.fila { flex-direction: row; justify-content: space-between; margin: 2px 0; }
+.etiqueta { color: #B9C7B5; }
+.valor { -unity-font-style: bold; }
+.termino { border-bottom-width: 1px; border-color: #B9C7B5; }
+.motivo { color: #E07A5F; white-space: normal; margin-top: 6px; }
+.texto { white-space: normal; }
+.botones { flex-direction: row; justify-content: flex-end; margin-top: 10px; }
+
+.notificaciones { position: absolute; left: 12px; bottom: 12px; width: 460px; flex-direction: column-reverse; }
+.notificacion {
+    background-color: rgba(20, 28, 22, 0.88); border-left-width: 3px; border-color: #E3C04B;
+    padding: 6px 10px; margin-top: 4px; white-space: normal;
+}
+.leyenda { position: absolute; left: 12px; top: 64px; min-width: 180px; }
+.leyenda-fila { flex-direction: row; align-items: center; margin: 1px 0; }
+.leyenda-color { width: 16px; height: 12px; margin-right: 8px; border-radius: 2px; }
+
+.etiqueta-localidad { position: absolute; font-size: 13px; color: #F2E6C9; -unity-font-style: bold; translate: -50% -50%; }
+.tooltip {
+    position: absolute; max-width: 360px; white-space: normal; padding: 8px;
+    background-color: rgba(10, 14, 11, 0.97); border-color: #E3C04B; border-width: 1px; border-radius: 4px;
+}
+
+.menu { align-items: center; justify-content: center; background-color: #1E2A22; }
+.menu-panel { width: 620px; }
+.menu-titulo { font-size: 52px; -unity-font-style: bold; color: #E3C04B; }
+.menu-boton { height: 40px; margin-top: 8px; font-size: 18px; }
+.partida { flex-direction: row; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom-width: 1px; border-color: #3C4F40; }
+.partida-texto { flex-shrink: 1; white-space: normal; }
+
+.barra-agua { height: 14px; background-color: #3A2F22; border-radius: 3px; margin: 4px 0; }
+.barra-agua-relleno { height: 100%; background-color: #2C6FB5; border-radius: 3px; }

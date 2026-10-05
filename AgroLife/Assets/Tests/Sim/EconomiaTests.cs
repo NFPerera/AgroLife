@@ -67,6 +67,18 @@ namespace AgroLife.Sim.Tests
             Assert.AreEqual(0.95 / 1.01, porMes[5] / porMes[9], 0.95 / 1.01 * 0.04);
         }
 
+        [Test]
+        public void HistorialDePreciosGuardaLosUltimos730Dias()
+        {
+            var s = DatosPrueba.Nueva();
+            for (int i = 0; i < 800; i++) s.StepDay();
+            var h = s.Estado.Precios.Historial;
+            Assert.AreEqual(730, h.Count);
+            Assert.AreEqual(s.Estado.Fecha, h[h.Count - 1].Fecha);
+            Assert.AreEqual(s.Estado.Precios.PrecioUsdT[Grano.Soja], h[h.Count - 1].SojaUsdT);
+            Assert.AreEqual(h[0].Fecha.MasDias(729), h[729].Fecha);
+        }
+
         /// <summary>100 años de precios: devuelve X de soja por día y el precio medio de soja por mes (1..12).</summary>
         List<double> Recorrido(out double[] precioMedioPorMes)
         {

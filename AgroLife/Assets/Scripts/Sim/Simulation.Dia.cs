@@ -16,6 +16,7 @@ namespace AgroLife.Sim
 
             var clima = GeneradorClima.GenerarDia(Estado.Clima, Datos.Clima, Datos.Region.Latitud, hoy, Rng(Flujo.Clima));
             Precios.AvanzarDia(Estado.Precios, Datos.Economia, hoy, Rng(Flujo.Precios));
+            RegistrarPrecios(hoy);
             if (hoy.Dia == 1) RiesgoSilobolsa(eventos);
 
             foreach (var lote in Estado.Lotes) SimularLote(lote, clima, eventos);
@@ -23,6 +24,16 @@ namespace AgroLife.Sim
             ActualizarCuenta(eventos);
             if (clima.TminC < 0) eventos.Add(NuevoEvento(TipoEvento.Helada, 0, $"Helada: {Formato.Numero(clima.TminC, 1)} °C"));
             return eventos;
+        }
+
+        void RegistrarPrecios(Fecha hoy)
+        {
+            var p = Estado.Precios;
+            p.Historial.Add(new PrecioDia
+            {
+                Fecha = hoy, TrigoUsdT = p.PrecioUsdT[Grano.Trigo], MaizUsdT = p.PrecioUsdT[Grano.Maiz], SojaUsdT = p.PrecioUsdT[Grano.Soja],
+            });
+            if (p.Historial.Count > EstadoPrecios.DiasDeHistorial) p.Historial.RemoveAt(0);
         }
 
         void IniciarCampania(List<Evento> eventos)

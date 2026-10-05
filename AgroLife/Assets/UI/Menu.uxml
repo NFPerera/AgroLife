@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="Estilos.uss" />
+    <ui:VisualElement name="menu" class="pantalla menu">
+        <ui:VisualElement class="panel menu-panel">
+            <ui:Label text="AgroLife" class="menu-titulo" />
+            <ui:Label text="Pergamino, zona núcleo" class="subtitulo" />
+            <ui:Label name="menu-mensaje" class="motivo" />
+            <ui:Label name="menu-error" class="motivo" />
+            <ui:Button name="menu-nueva" text="Nueva partida" class="boton boton-principal menu-boton" />
+            <ui:Label text="Partidas guardadas" class="subtitulo" />
+            <ui:ScrollView name="menu-partidas" mode="Vertical" horizontal-scroller-visibility="Hidden" style="max-height: 320px;" />
+            <ui:Button name="menu-salir" text="Salir" class="boton menu-boton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

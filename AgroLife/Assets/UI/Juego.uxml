@@ -1,0 +1,126 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="Estilos.uss" />
+    <ui:VisualElement name="juego" picking-mode="Ignore" class="pantalla">
+        <ui:VisualElement name="etiquetas" picking-mode="Ignore" class="capa-absoluta" />
+
+        <ui:VisualElement name="barra" class="barra">
+            <ui:Label name="fecha" text="1/5 Año 1" class="barra-fecha" />
+            <ui:VisualElement class="grupo">
+                <ui:Button name="vel-pausa" text="❚❚" class="boton boton-vel" />
+                <ui:Button name="vel-x1" text="x1" class="boton boton-vel" />
+                <ui:Button name="vel-x2" text="x2" class="boton boton-vel" />
+                <ui:Button name="vel-x4" text="x4" class="boton boton-vel" />
+            </ui:VisualElement>
+            <ui:Label name="saldo" text="US$ 0" class="barra-saldo" />
+            <ui:Label name="pronostico" text="" class="barra-pronostico" />
+            <ui:VisualElement class="separador" />
+            <ui:DropdownField name="capa" label="Capa" class="barra-capa" />
+            <ui:Button name="btn-mercado" text="Mercado" class="boton" />
+            <ui:Button name="btn-guardar" text="Guardar" class="boton" />
+            <ui:Button name="btn-menu" text="Menú" class="boton" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="ficha" class="panel panel-lateral oculto">
+            <ui:VisualElement class="fila">
+                <ui:Label name="ficha-titulo" text="Lote" class="titulo" />
+                <ui:Button name="ficha-cerrar" text="✕" class="boton" />
+            </ui:VisualElement>
+            <ui:ScrollView>
+                <ui:VisualElement class="fila"><ui:Label text="Tenencia" class="etiqueta" /><ui:Label name="f-tenencia" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="fila"><ui:Label text="Unidad de suelo" class="etiqueta" /><ui:Label name="f-unidad" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="fila"><ui:Label text="Clase textural" name="t-clase_textural" class="etiqueta termino" /><ui:Label name="f-clase" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="fila"><ui:Label text="IP" name="t-ip" class="etiqueta termino" /><ui:Label name="f-ip" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="fila"><ui:Label text="Fósforo Bray" name="t-fosforo_bray" class="etiqueta termino" /><ui:Label name="f-fosforo" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="fila"><ui:Label text="Cultivo anterior" class="etiqueta" /><ui:Label name="f-anterior" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="fila"><ui:Label text="Distancia al acopio" class="etiqueta" /><ui:Label name="f-distancia" class="valor" /></ui:VisualElement>
+                <ui:VisualElement name="ficha-triangulo" style="align-items: center; margin: 6px 0;" />
+                <ui:VisualElement class="fila"><ui:Label text="Agua útil" name="t-agua_util" class="etiqueta termino" /><ui:Label name="f-agua" class="valor" /></ui:VisualElement>
+                <ui:VisualElement class="barra-agua"><ui:VisualElement name="f-agua-relleno" class="barra-agua-relleno" /></ui:VisualElement>
+                <ui:Label text="Cultivo" class="subtitulo" />
+                <ui:Label name="f-cultivo" class="texto" />
+                <ui:VisualElement name="f-fila-rinde" class="fila"><ui:Label text="Rinde estimado" name="t-rinde_esperado" class="etiqueta termino" /><ui:Label name="f-rinde" class="valor" /></ui:VisualElement>
+                <ui:VisualElement name="ficha-acciones" style="margin-top: 10px;" />
+                <ui:Label name="ficha-motivo" class="motivo" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="planificacion" class="panel panel-modal oculto">
+            <ui:Label name="plan-titulo" text="Planificar" class="titulo" />
+            <ui:DropdownField name="plan-cultivo" label="Cultivo" />
+            <ui:SliderInt name="plan-fecha" label="Fecha de siembra" low-value="0" high-value="1" />
+            <ui:Label name="plan-fecha-texto" class="valor" />
+            <ui:Label text="Ciclo del cultivo" name="t-genetica_ciclo" class="etiqueta termino" />
+            <ui:RadioButtonGroup name="plan-genetica" label="Genética" choices="Ciclo corto,Ciclo largo" />
+            <ui:SliderInt name="plan-n" label="Nitrógeno (kg N/ha)" low-value="0" high-value="250" />
+            <ui:Label name="plan-n-texto" class="valor" />
+            <ui:SliderInt name="plan-p" label="Fósforo (kg P/ha)" low-value="0" high-value="60" />
+            <ui:Label name="plan-p-texto" class="valor" />
+            <ui:RadioButtonGroup name="plan-destino" label="Al cosechar" choices="Vender al cosechar,Embolsar en silobolsa" />
+            <ui:VisualElement name="plan-soja2" class="oculto">
+                <ui:Label text="Soja de segunda: se siembra sola al día siguiente de cosechar el trigo (hasta el 15/1)." class="texto" />
+                <ui:RadioButtonGroup name="plan-s2-genetica" label="Genética de la soja" choices="Ciclo corto,Ciclo largo" />
+                <ui:SliderInt name="plan-s2-p" label="Fósforo de la soja (kg P/ha)" low-value="0" high-value="60" />
+                <ui:Label name="plan-s2-p-texto" class="valor" />
+            </ui:VisualElement>
+            <ui:Label text="Presupuesto" class="subtitulo" />
+            <ui:VisualElement class="fila"><ui:Label text="Costo total" class="etiqueta" /><ui:Label name="pres-costo" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Rinde esperado" name="t-rinde_esperado" class="etiqueta termino" /><ui:Label name="pres-rinde" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Margen bruto proyectado" name="t-margen_bruto" class="etiqueta termino" /><ui:Label name="pres-mb" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Rinde de indiferencia" name="t-rinde_indiferencia" class="etiqueta termino" /><ui:Label name="pres-ri" class="valor" /></ui:VisualElement>
+            <ui:Label name="plan-motivo" class="motivo" />
+            <ui:VisualElement class="botones">
+                <ui:Button name="plan-cancelar" text="Cancelar" class="boton" />
+                <ui:Button name="plan-confirmar" text="Confirmar" class="boton boton-principal" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="mercado" class="panel panel-modal oculto">
+            <ui:VisualElement class="fila">
+                <ui:Label text="Mercado" class="titulo" />
+                <ui:Button name="mercado-cerrar" text="✕" class="boton" />
+            </ui:VisualElement>
+            <ui:Label text="Precio de hoy (pizarra, menos la comisión al vender)" class="subtitulo" />
+            <ui:VisualElement class="fila"><ui:Label text="Trigo" class="etiqueta" /><ui:Label name="precio-trigo" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Maíz" class="etiqueta" /><ui:Label name="precio-maiz" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Soja" class="etiqueta" /><ui:Label name="precio-soja" class="valor" /></ui:VisualElement>
+            <ui:Label text="Evolución del precio (US$/t)" class="subtitulo" />
+            <ui:VisualElement name="mercado-grafico" />
+            <ui:Label text="Stock en silobolsa" name="t-silobolsa" class="subtitulo termino" />
+            <ui:VisualElement class="fila"><ui:Label text="Trigo" class="etiqueta" /><ui:Label name="stock-trigo" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Maíz" class="etiqueta" /><ui:Label name="stock-maiz" class="valor" /></ui:VisualElement>
+            <ui:VisualElement class="fila"><ui:Label text="Soja" class="etiqueta" /><ui:Label name="stock-soja" class="valor" /></ui:VisualElement>
+            <ui:Label text="Vender" class="subtitulo" />
+            <ui:VisualElement class="fila" style="align-items: center;">
+                <ui:DropdownField name="venta-grano" style="width: 160px;" />
+                <ui:FloatField name="venta-t" label="Toneladas" value="0" style="width: 220px;" />
+                <ui:Button name="venta-btn" text="Vender" class="boton boton-principal" />
+                <ui:Button name="venta-todo" text="Vender todo" class="boton" />
+            </ui:VisualElement>
+            <ui:Label name="mercado-motivo" class="motivo" />
+        </ui:VisualElement>
+        <ui:VisualElement name="reporte" class="panel panel-modal oculto">
+            <ui:VisualElement class="fila">
+                <ui:Label name="reporte-titulo" class="titulo" />
+                <ui:Button name="reporte-cerrar" text="✕" class="boton" />
+            </ui:VisualElement>
+            <ui:DropdownField name="reporte-cultivo" label="Cultivo" />
+            <ui:Label text="Del rinde potencial al real: cuánto se perdió por cada causa (qq/ha)" name="t-rinde_potencial" class="subtitulo termino" />
+            <ui:VisualElement name="reporte-escalera" />
+            <ui:Label name="reporte-promedio" class="etiqueta" style="color: #E3C04B;" />
+            <ui:ScrollView name="reporte-tabla" style="max-height: 300px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="dialogo" class="panel panel-dialogo oculto">
+            <ui:Label name="dialogo-titulo" class="titulo" />
+            <ui:Label name="dialogo-texto" class="texto" />
+            <ui:VisualElement name="dialogo-detalle" style="margin-top: 8px;" />
+            <ui:Label name="dialogo-motivo" class="motivo" />
+            <ui:VisualElement class="botones">
+                <ui:Button name="dialogo-no" class="boton" />
+                <ui:Button name="dialogo-si" class="boton boton-principal" />
+            </ui:VisualElement>
+            <ui:Label text="Umbral de daño económico" name="t-umbral_danio" class="etiqueta termino oculto" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="notificaciones" picking-mode="Ignore" class="notificaciones" />
+        <ui:VisualElement name="leyenda" class="panel leyenda" />
+        <ui:Label name="tooltip" picking-mode="Ignore" class="tooltip oculto" />
+    </ui:VisualElement>
+</ui:UXML>

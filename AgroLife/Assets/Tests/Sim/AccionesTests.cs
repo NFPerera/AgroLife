@@ -159,6 +159,15 @@ namespace AgroLife.Sim.Tests
         }
 
         [Test]
+        public void VencimientoArrendamientoSigueLaRegla()
+        {
+            var s = DatosPrueba.Nueva();
+            Assert.AreEqual(Fecha.Crear(30, 4, 2), s.VencimientoArrendamiento());
+            DatosPrueba.AvanzarHasta(s, Fecha.Crear(30, 4, 2));
+            Assert.AreEqual(Fecha.Crear(30, 4, 3), s.VencimientoArrendamiento());
+        }
+
+        [Test]
         public void CancelarPlanAntesDeSembrar()
         {
             var s = DatosPrueba.Nueva();

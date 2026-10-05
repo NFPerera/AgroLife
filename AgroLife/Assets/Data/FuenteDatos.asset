@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705cf866c0ebaba4fadc97b8e074a802, type: 3}
+  m_Name: FuenteDatos
+  m_EditorClassIdentifier: AgroLife.Game::AgroLife.Game.FuenteDatos
+  Crops: {fileID: 4900000, guid: 67db950377ba04b4592919249ad96814, type: 3}
+  Pests: {fileID: 4900000, guid: beef35541c1f082488e808ba45270eb4, type: 3}
+  Economy: {fileID: 4900000, guid: c1c074c2b554b4c4b8071841769df102, type: 3}
+  Soils: {fileID: 4900000, guid: a6c38d1550a76184fa49dbd86734c10f, type: 3}
+  Region: {fileID: 4900000, guid: 20288c00d26ce58468d2dd6c11ab2396, type: 3}
+  Lotes: {fileID: 4900000, guid: e5a86b4a160feb2439b8178e4ff0c783, type: 3}
+  Clima: {fileID: 4900000, guid: 27f9b9482e192b642993a53cfb934aec, type: 3}
+  Geografia: {fileID: 4900000, guid: 8581a43c62f79b24da5d05d43da3d137, type: 3}
+  Glosario: {fileID: 4900000, guid: 129c59ea245c66547a6bf3e36ce623b4, type: 3}

@@ -1,0 +1,9 @@
+{
+    "name": "AgroLife.Game",
+    "rootNamespace": "AgroLife.Game",
+    "references": [
+        "AgroLife.Sim",
+        "Unity.InputSystem"
+    ],
+    "autoReferenced": true
+}

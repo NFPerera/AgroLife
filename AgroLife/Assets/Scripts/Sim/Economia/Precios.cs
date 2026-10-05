@@ -3,10 +3,16 @@ using System.Collections.Generic;
 
 namespace AgroLife.Sim
 {
+    public sealed class PrecioDia { public Fecha Fecha; public double TrigoUsdT, MaizUsdT, SojaUsdT; }
+
     public sealed class EstadoPrecios
     {
+        public const int DiasDeHistorial = 730;
+
         public Dictionary<Grano, double> X = new Dictionary<Grano, double>();
         public Dictionary<Grano, double> PrecioUsdT = new Dictionary<Grano, double>();
+        /// <summary>Los últimos DiasDeHistorial días simulados, en orden (para el gráfico del mercado).</summary>
+        public List<PrecioDia> Historial = new List<PrecioDia>();
     }
 
     /// <summary>Precio diario = referencia × estacionalidad del mes × exp(x), con x que tiende a volver a cero.</summary>
